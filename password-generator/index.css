@@ -1,0 +1,48 @@
+
+body {
+    font-family: sans-serif;
+    align-items: center; 
+    background-color: rgb(25, 22, 40);
+}
+
+#password-generator {
+    padding: 50px;
+    width: 33%;
+    height: 65vh; 
+    display: flex;              
+    flex-direction: column;     
+    justify-content: space-between; 
+    background-color: rgb(42, 36, 88);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    margin: 100px auto;
+    border-radius: 25px;
+}
+
+#generate-password-btn {
+    display: flex;
+    flex-direction: column;
+}
+
+#random-password {
+    color: white;
+    
+}
+
+#option-btns {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#headingOne {
+    color: white;
+}
+
+#headingTwo {
+    color: rgb(205, 122, 235);
+}
+
+#tagline {
+    font-weight: 100;
+    color: rgb(189, 188, 188);
+}
