@@ -8,20 +8,20 @@
 </head>
 <body>
     <div id="password-generator">
-        <div>
+        <div id = "headings">
             <h1 id="headingOne">Generate a</h1>
             <h1 id="headingTwo">random password</h1>
             <h3 id="tagline">Never use an insecure password again</h3>
         </div>
-       <div id="controls">
-        <h1 id="random-password"></h1>
-        <button id="generate-password-btn">Generate password</button>
-            <div id="option-btns">
-                <label><input type="checkbox"> Include capital letters?</label>
-                <label><input type="checkbox"> Include numbers?</label>
-                <label><input type="checkbox"> Include special characters?</label>
-             </div>
+        <div id="password-and-btn">
+            <h1 id="random-password"></h1>
+            <button id="generate-password-btn">Generate password</button>
         </div>
+            <div id="option-btns">
+                <label><input type="checkbox" id="check-capitals"> Include capital letters?</label>
+                <label><input type="checkbox" id="check-numbers"> Include numbers?</label>
+                <label><input type="checkbox" id="check-special-characters"> Include special characters?</label>
+            </div>
     </div>
     <script src="index.js"></script>
 </body>

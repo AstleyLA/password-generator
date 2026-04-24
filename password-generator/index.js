@@ -2,14 +2,28 @@ const capitalLetters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N",
 const lowercaseLetters = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
 const numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
 const specialCharacters = ["~","`","!","@","#","$","%","^","&","*","(",")","_","-","+","=","{","[","}","]",",","|",":",";","<",">",".","?","/"]
-let passwordCharacters = []
-
-passwordCharacters.push(...lowercaseLetters)
 
 
 function passwordGenerator() {
     let password = ""
-    for (let i = 0; i < 16; i++) {
+    let passwordCharacters = []
+
+    passwordCharacters.push(...lowercaseLetters)
+
+    if (document.getElementById("check-capitals").checked) {
+    passwordCharacters.push(...capitalLetters)
+        }
+
+     if (document.getElementById("check-numbers").checked) {
+    passwordCharacters.push(...numbers)
+        }
+
+     if (document.getElementById("check-special-characters").checked) {
+    passwordCharacters.push(...specialCharacters)
+        }
+
+
+    for (let i = 0; i < 21; i++) {
         password += passwordCharacters[Math.floor( Math.random() * passwordCharacters.length )]
     }
     return password
